@@ -59,7 +59,7 @@ const News=(props)=> {
         {
         articles && articles?.map((element)=>{
           return <div className="col-md-4 my-3" key={element.url}>
-          <NewsItem  title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage} url={element.newsUrl} author={element.author} date={element.publishedAt} source={element.source.name}/>
+          <NewsItem  title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name}/>
         </div>
         })}
         </div>
