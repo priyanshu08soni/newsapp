@@ -40,7 +40,7 @@ const News=(props)=> {
   //   updateNews();
   // }
   const fetchMoreData=async()=>{
-    const url=`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
+    const url=`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=651a7a002d4048b39da8d678e208ad84&page=${page+1}&pageSize=${props.pageSize}`;
     setPage(page+1);
     
     let data=await fetch(url);
