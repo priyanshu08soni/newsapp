@@ -21,7 +21,7 @@ const App=()=> {
           <Navbar/>
           <LoadingBar color='#f11946' height={3} progress={progress}/>
               <Routes>
-                <Route exact path="/" element={<News setProgress={setProgress} apiKey={apiKey}   key="general" pageSize={pageSize} country="in" category="general"/>}></Route>
+                <Route exact path="https://newsapp-sooty-delta.vercel.app/" element={<News setProgress={setProgress} apiKey={apiKey}   key="general" pageSize={pageSize} country="in" category="general"/>}></Route>
                 <Route exact path="/bussness" element={<News setProgress={setProgress} apiKey={apiKey}   key="bussness" pageSize={pageSize} country="in" category="bussness"/>}></Route>
                 <Route exact path="/entertainment" element={<News setProgress={setProgress} apiKey={apiKey}   key="entertainment" pageSize={pageSize} country="in" category="entertainment"/>}></Route>
                 <Route exact path="/general" element={<News setProgress={setProgress} apiKey={apiKey}   key="general" pageSize={pageSize} country="in" category="general"/>}></Route>
